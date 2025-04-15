@@ -1,93 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .container{
-                width: 450px;
-                height: 350px;
-                background-color:black ;
-                color: white;
-               margin-left: 500px;
-               padding: 30px;             
-            }
-            .type{
-                display: flex;
-                justify-content: center;
-               padding: 20px;
-            }
-             h1{
-                display: flex;
-                justify-content: center;
-                margin-right: 110px;
-             }
-             .res{
-                margin-left: 20px;
-             }
-             
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="res">
-
+<title>Register Form</title>
+<head>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
             
+        }
+        .container {
+            width: 350px;
+            height: 450px;
+            background-color: black;
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        .type {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .res {
+            margin: 0px;
+            width: 350px;
+        }
+        input{
+            height: 25px;
+            margin-top: 10px;
+            border-radius: 3px;
+            margin-left: 15px;
+            
+        }
+        td{
+            font-size: 20px;
+        }
+        .poi{
+            cursor: pointer;
+        }
+        .sel{
+            height: 20px;
+        }
+        table{
+            width: 300px;
+        }
+        td si{
+            width: 50px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="res">
+
+
             <h1>Registration Form</h1>
-        
-        <div class="type">
-        
-        <form>
-        
-            <table>
-               
-                <tr>                    
 
-                        <td> name :</td>  <td> <input type="text" enter your name></td>
-                    </tr>               
-                    <tr>
-            
-                        <td> age : </td> <td> <input type="text" enter your age> </td>
-                    </tr>
-                    
-           
-                <tr>
-                    <td>gender : </td> 
-                    <td>
-                         <input type="radio" name="gender"> Male 
-                        <input type="radio" name="gender"> Female</td>
-                </tr>
-                <tr>
-                    <td>Email : </td> <td> <input type="text" enter your email> </td>
-                </tr>
-                <tr>
-        
-                    <td>Select your course : </td>
-                    <td>
-                        <select>
-        
-                            <option>python programming</option>
-                            <option>java script</option>
-                            <option>Html</option>
-                        </select>
-        
-                    </td>
-                </tr>
-                <tr>
-                    <td>Upload your file</td>
-                    <td> <input type="file"></td>
-                </tr>
-        
-                <tr>
-        
-                    <td> <input type="reset"></td>
-                    <td> <input type="submit"></td>
-                </tr>
-                
-            </table>
-        </form>
+            <div class="type">
+
+                <form>
+
+                    <table>
+
+                        <tr>
+
+                            <td> name :</td>
+                            <td class="si"> <input type="text" enter your name></td>
+                        </tr>
+                        <tr>
+
+                            <td> age : </td>
+                            <td> <input type="number" enter your age> </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>gender : </td>
+                            <td>
+                                <input type="radio" name="gender" class="poi"> Male
+                                <input type="radio" name="gender" class="poi"> Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email : </td>
+                            <td> <input type="text" enter your email> </td>
+                        </tr>
+                        <tr>
+
+                            <td>Select your course : </td>
+                            <td>
+                                <select style="margin-left: 15px;">
+
+                                    <option>python programming</option>
+                                    <option>java script</option>
+                                    <option>Html</option>
+                                </select>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Upload your file</td>
+                            <td> <input type="file"></td>
+                        </tr>
+
+                        <tr>
+
+                            <td> <input type="reset" class="poi"></td>
+                            <td> <input type="submit" class="poi"></td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
         </div>
-        </div>
-        </div>
-    
-    </body>
+    </div>
+
+</body>
+
 </html>
-      
